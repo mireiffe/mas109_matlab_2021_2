@@ -18,12 +18,12 @@ minimal_mistakes_skin    : "mytheme" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "en-US"
 title                    : "MAS109 MATLAB Page"
 title_separator          : "-"
-subtitle                 : "Spring, 2021" # site tagline that appears below site title in masthead
+subtitle                 : "Fall, 2021" # site tagline that appears below site title in masthead
 name                     : "Seongeun"
 description              : "Introduction to Linear Algebra"
 url                      : "https://mireiffe.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/mas109_matlab_2021_1" # the subpath of your site, e.g. "/blog"
-repository               : "mireiffe/mas109_matlab_2021_1" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+baseurl                  : "/mas109_matlab_2021_2" # the subpath of your site, e.g. "/blog"
+repository               : "mireiffe/mas109_matlab_2021_2" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
