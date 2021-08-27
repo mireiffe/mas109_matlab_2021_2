@@ -1,0 +1,43 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Serif+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+$type-size-4-5: 1.12em !default; // Ubuntu Mono is a bit small
+$type-size-5-6: 0.95em !default; // Ubuntu Mono is a bit small
+
+// https://github.com/mmistakes/minimal-mistakes/issues/1219
+html {
+    font-size: 14px; // change to whatever
+
+    @include breakpoint($medium) {
+        font-size: 14px; // change to whatever
+    }
+
+    @include breakpoint($large) {
+        font-size: 16px; // change to whatever
+    }
+
+    @include breakpoint($x-large) {
+        font-size: 18px; // change to whatever
+    }
+}
+
+.highlight {
+    font-family: $monospace;
+    font-size: $type-size-4-5;
+}
+
+.language-plaintext {
+    font-family: $monospace;
+    font-size: $type-size-5-6;
+    color: rgb(142, 93, 34);
+    background: $base02;
+    background: #00000000;
+}
