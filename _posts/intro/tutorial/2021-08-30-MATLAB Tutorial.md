@@ -1,6 +1,6 @@
 ---
-date: 2021-08-302T00:00:00Z
-title: "MATLAB 연습 / MATLAB Tutorial"
+date: 2021-08-30T00:00:00Z
+title: MATLAB Tutorial
 categories: Intro
 tags: intro tutorial
 # 목차
