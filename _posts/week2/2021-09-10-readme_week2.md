@@ -21,7 +21,6 @@ toc_label: "Table of Contents"
 Assignment | 1
 ---|---
 Doc | [Link]({{site.baseurl}}/week2/assign1)
-Files | [Download](<https://klms.kaist.ac.kr/mod/assign/view.php?id=504290>)
 Score | 0
 Submission | False
 
