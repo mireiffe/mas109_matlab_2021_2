@@ -10,13 +10,20 @@ toc_sticky: true
 toc_label: "Table of Contents" 
 ---
 
-# 2주차 || Week 2
+# Week 2
 
-## 연습문제 || Exercises
+## Orientation
+
+Orientation | 
+---|---
+Video | [Link](https://klms.kaist.ac.kr/course/view.php?id=131566&section=0#section-2)
+PPT | [Download]({{site.baseurl}}/files/week2/About_MATLAB.pptx)
+
+## Exercises
 
 범위 / Coverage : [2.1 - 3.4]({{site.baseurl}}/week2/ex1)
 
-## 과제 1 || Assignment 1
+## Assignment 1
 
 Assignment | 1
 ---|---
