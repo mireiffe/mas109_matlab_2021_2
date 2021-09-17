@@ -18,17 +18,28 @@ fs = {'cos', 'sin', 'e'};
 ps = {'x', 'y', 'xy'};
 
 t = cell(3, 1);
-for i = 1:2
-    if c(i) == 0 
-        t{i} = '';
-    elseif c(i) == 1
-        t{i} = sprintf("+ %s^%d(%d%s)", fs{i}, p(i), r(i), ps{xy(i)});
-    elseif c(i) == -1
-        t{i} = sprintf("- %s^%d(%d%s)", fs{i}, p(i), r(i), ps{xy(i)});
-    else
-        t{i} = sprintf("%+d%s^%d(%d%s)", c(i), fs{i}, p(i), r(i), ps{xy(i)});
-    end
+i = 1;
+if c(i) == 0
+    t{i} = '';
+elseif c(i) == 1
+    t{i} = sprintf("%s^%d(%d%s)", fs{i}, p(i), r(i), ps{xy(i)});
+elseif c(i) == -1
+    t{i} = sprintf("- %s^%d(%d%s)", fs{i}, p(i), r(i), ps{xy(i)});
+else
+    t{i} = sprintf("%+d%s^%d(%d%s)", c(i), fs{i}, p(i), r(i), ps{xy(i)});
 end
+
+i = 2;
+if c(i) == 0
+    t{i} = '';
+elseif c(i) == 1
+    t{i} = sprintf("+ %s^%d(%d%s)", fs{i}, p(i), r(i), ps{xy(i)});
+elseif c(i) == -1
+    t{i} = sprintf("- %s^%d(%d%s)", fs{i}, p(i), r(i), ps{xy(i)});
+else
+    t{i} = sprintf("%+d%s^%d(%d%s)", c(i), fs{i}, p(i), r(i), ps{xy(i)});
+end
+
 
 if c(3) == 0
     t{3} = '';
@@ -40,15 +51,28 @@ else
     t{3} = sprintf("%+d%s^{(-x^%d-y^%d)}", c(3), fs{3}, p(3), p(4));
 end
 
-eq_ = sprintf("z = %s %s %s", t{1}, t{2}, t{3});
+eq_ = sprintf("ID number: %d\n Your equation: z = %s %s %s", idn, t{1}, t{2}, t{3});
 
 eq = sprintf("\\fontsize{15} %s", eq_);
 
-try
-    CreateStruct.Interpreter = 'tex';
-    CreateStruct.WindowStyle = 'non-modal';
-    msgbox(eq,'Assignment2, Exercise2', CreateStruct);
-catch
-    fprintf("%s\n", eq_);
+if sum(abs(c)) == 0
+    try
+        eqq_ = sprintf("ID number: %d\n Your equation: z = -2cos(4xy) + sin(y) + e^{(-x^2 -y^2)}", idn);
+%         eqq_ = 'z = -2cos(4xy) + sin(y) + e^{(-x^2 -y^2)}';
+        eqq = sprintf("\\fontsize{15} %s", eqq_);
+        CreateStruct.Interpreter = 'tex';
+        CreateStruct.WindowStyle = 'non-modal';
+        msgbox(eqq,'Assignment2, Exercise2', CreateStruct);
+    catch
+        fprintf("%s\n", eqq_);
+    end
+else
+    try
+        CreateStruct.Interpreter = 'tex';
+        CreateStruct.WindowStyle = 'non-modal';
+        msgbox(eq,'Assignment2, Exercise2', CreateStruct);
+    catch
+        fprintf("%s\n", eq_);
+    end
 end
 end

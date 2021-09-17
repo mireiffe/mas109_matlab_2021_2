@@ -14,7 +14,7 @@ c2 = randi([30, 50], 2, 1);
 stc1 = sort(c1);
 stc2 = sort(c2);
 
-eqx_ = sprintf("x = %dsin^3(t)", stc2(2));
+eqx_ = sprintf("ID number: %d\n Your equations:\n x = %dsin^3(t)", idn, stc2(2));
 eqy_ = sprintf("y = %dcos(t) - %dcos(2t) - %dcos(3t) - %dcos(4t)", ...
     stc2(1), stc1(3), stc1(2), stc1(1));
 
