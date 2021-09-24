@@ -36,8 +36,12 @@ Submission format | Two ATLAB figure files (*.fig)
 
 이 과제에는, 결과를 제출해야 하는 문제가 포함되어 있습니다. 문서를 잘 읽고 결과물을 제출하세요.
 
+[GO!]({{site.baseurl}}/week3/assign2)
+
 ---
 
 This assignment covers how to visualize using MATLAB. It contains drawing 2D graphs of 1D functions, drawing 2D and 3D graphs of parametric functions, and 3D surface representation.
 
 This assignment contains questions that require you to submit your results. Read the documentation carefully and submit your results.
+
+[GO!]({{site.baseurl}}/week3/assign2/#assignment-2)
