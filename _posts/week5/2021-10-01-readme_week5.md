@@ -17,7 +17,7 @@ toc_label: "Table of Contents"
 
 Orientation | 
 ---|---
-Video | [SOON]()
+Video | [Link](<https://klms.kaist.ac.kr/course/view.php?id=131566&section=0#section-5>)
 
 ## Exercises
 
