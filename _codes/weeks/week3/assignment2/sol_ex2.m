@@ -56,7 +56,7 @@ if c(i) == 0
 elseif c(i) == 1
     t{i} = sprintf("+ %s(%d*%s).^%d", fs{i}, r(i), ps{xy(i)}, p(i));
 elseif c(i) == -1
-    t{i} = sprintf("- %s^%d(%d*%s).^%d", fs{i}, r(i), ps{xy(i)}, p(i));
+    t{i} = sprintf("- %s(%d*%s).^%d", fs{i}, r(i), ps{xy(i)}, p(i));
 else
     t{i} = sprintf("%+d*%s(%d*%s).^%d", c(i), fs{i}, r(i), ps{xy(i)}, p(i));
 end
