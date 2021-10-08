@@ -23,8 +23,10 @@ kk3 = sign(rand() - .5);
 rng(idn*4);
 k4 = randi([-60, 60], 1, 1);
 
-img = eval(lst(sel));
-res = imnoise(img, 'gaussian', ns);
+img = double(eval(lst(sel))) / 255;
+
+noise = randn(size(img)) * ns;
+res = noise + img;
 
 % figure();
 % imshow(res);
