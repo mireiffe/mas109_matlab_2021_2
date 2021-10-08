@@ -18,22 +18,31 @@ k1 = rand()*(1.3 - 0.7) + 0.7;
 rng(idn*2);
 k2 = rand()*(1.3 - 0.7) + 0.7;
 rng(idn*3);
-k3 = rand()*(1.3 - 0.7) + 0.7;
+k3 = rand()*(5 - 1) + 1;
+kk3 = sign(rand() - .5);
 rng(idn*4);
-k4 = rand()*(1.3 - 0.7) + 0.7;
+k4 = randi([-60, 60], 1, 1);
 
 img = eval(lst(sel));
 res = imnoise(img, 'gaussian', ns);
 
-figure();
-imshow(res);
-title(sprintf('For %d.png', idn));
+% figure();
+% imshow(res);
+% title(sprintf('For %d.png', idn));
 
 imwrite(res, sprintf('For_%d.png', idn));
 
-submat = sprintf("\\fontsize{15} Submatrix:");
-rows = sprintf("\\fontsize{15}          Rows : %d < r < %d", rc1(1), rc2(1));
-cols = sprintf("\\fontsize{15}         Columns : %d < c < %d", rc1(2), rc2(2));
+params = sprintf("\\fontsize{15} Parameters:");
+sk1 = sprintf("\\fontsize{15} k_1 = %.2f", k1);
+sk2 = sprintf("\\fontsize{15} k_2 = %.2f", k2);
+sk3 = sprintf("\\fontsize{15} k_3 = %.2f", kk3*k3);
+sk4 = sprintf("\\fontsize{15} k_4 = %d (degree)", k4);
 
-
+try
+    CreateStruct.Interpreter = 'tex';
+    CreateStruct.WindowStyle = 'non-modal';
+    msgbox({params; sk1; sk2; sk3; sk4},'Assignment5, Exercise2', CreateStruct);
+catch
+    fprintf("%s\n%s\n%s\n%s\n%s", params, sk1, sk2, sk3, sk4);
+end
 end
