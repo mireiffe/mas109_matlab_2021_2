@@ -15,9 +15,7 @@ toc_label: "Table of Contents"
 
 ## MATLAB Recitation
 
-Orientation | 
----|---
-Video | [Video](<https://klms.kaist.ac.kr/course/view.php?id=131566&section=0#section-6>)
+Video: [Video](<https://klms.kaist.ac.kr/course/view.php?id=131566&section=0#section-6>)
 
 ## Exercises
 
