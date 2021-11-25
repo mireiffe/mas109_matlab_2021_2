@@ -1,4 +1,4 @@
-function [a, b]=LS_solver_sol(x, y, opt)
+function [a, b]=LS_solver(x, y, opt)
 % --------- function file LS_Solver --------- %
 % input data: x, y and opt
 %   if opt=1, linear model (y=a*x+b)
